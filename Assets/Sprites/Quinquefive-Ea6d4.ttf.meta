@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 3f6a1987cf47f2b4bafe4ee687429073
+timeCreated: 1643445649
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: QuinqueFive
+  fontNames:
+  - QuinqueFive
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
