@@ -16,6 +16,7 @@ public class GameOver : MonoBehaviour {
         background = GetComponent<SpriteRenderer>();
         background.color = new Color(background.color.r, background.color.g, background.color.b, 0);
         text.color = new Color(text.color.r, text.color.g, text.color.b, 0);
+        foreach (AudioSource aS in FindObjectsOfType<AudioSource>()) aS.Stop();
         FindObjectOfType<SoundManager>().playSound("gameOver");
     }
 	

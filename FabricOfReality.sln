@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FabricOfReality", "FabricOfReality.csproj", "{1EFF7386-4AA3-E123-DDD2-8A605B4E45DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1EFF7386-4AA3-E123-DDD2-8A605B4E45DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EFF7386-4AA3-E123-DDD2-8A605B4E45DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EFF7386-4AA3-E123-DDD2-8A605B4E45DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EFF7386-4AA3-E123-DDD2-8A605B4E45DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

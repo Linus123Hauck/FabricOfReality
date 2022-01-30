@@ -54,7 +54,7 @@ MonoBehaviour:
   rotationOffset: 0
   bullet: {fileID: 1036251859842936, guid: 12d79781e9208e449ac2a372bb5c1449, type: 2}
   sprite: {fileID: 21300178, guid: 2aac7d2bdb9df094b8085a1d3b425578, type: 3}
-  bursts: 100
+  bursts: 15
   bulletsPerBurst:
     serializedVersion: 2
     m_Curve:
@@ -96,7 +96,7 @@ MonoBehaviour:
   _rotation: 0
   _distance: 40
   _spawnDelay: 0
-  _lifeTime: 3
+  _lifeTime: 2
   _moveEase: 0
   _path: '[(0,-10,-10),(0,10,10),(0,-10,-10),(0,10,10)]'
   _size: (10,10,10,10,0)

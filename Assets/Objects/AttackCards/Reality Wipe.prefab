@@ -173,7 +173,7 @@ MonoBehaviour:
   attackPattern: {fileID: 1928770569346036, guid: e29fafc3cc3cdcf409d2fb72bedd7411,
     type: 2}
   color: {r: 0, g: 0, b: 0, a: 1}
-  text: 144
+  text: 100
   sound: {fileID: 8300000, guid: 4f6ec22c08d911f4499b23c7d30ab02c, type: 3}
   DestroyEffect: {fileID: 198767885619581222, guid: 83a82fe21894a2147b8c0965d5cb9d9e,
     type: 2}
