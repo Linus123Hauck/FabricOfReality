@@ -8254,7 +8254,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: (Alt+Space to toggle fullscreen)
+  m_Text: (Alt+Enter to toggle fullscreen)
 --- !u!222 &1174660205
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -172,7 +172,7 @@ MonoBehaviour:
   bulletSprite: {fileID: 21300178, guid: 2aac7d2bdb9df094b8085a1d3b425578, type: 3}
   attackPattern: {fileID: 1112395914346698, guid: 44f3c52c0b2200d4195ae21bf6c7f302,
     type: 2}
-  color: {r: 1, g: 0, b: 0.76551723, a: 1}
+  color: {r: 1, g: 0.30882353, b: 0.72352934, a: 1}
   text: 15
   sound: {fileID: 8300000, guid: 06e2597b04d00254a8fe0e1aaf7d38fb, type: 3}
   DestroyEffect: {fileID: 198767885619581222, guid: 83a82fe21894a2147b8c0965d5cb9d9e,

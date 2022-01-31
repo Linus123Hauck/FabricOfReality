@@ -15,7 +15,6 @@ public class EnemySpawner : MonoBehaviour {
 	// Use this for initialization
 	void OnEnable () {
         nextEnemyAt = Time.fixedTime + 300f;
-        difficulty = 1;
         difficultySetting = GlobalVals._globalDifficulty;
 
         switch (difficultySetting)
@@ -24,25 +23,25 @@ public class EnemySpawner : MonoBehaviour {
                 difficulty = 1;
                 break;
             case "Easy":
-                difficulty = 1;
+                difficulty = 2;
                 break;
             case "Normal":
-                difficulty = 1;
+                difficulty = 4;
                 break;
             case "Hard":
-                difficulty = 1.25f;
+                difficulty = 5;
                 break;
             case "Harder":
-                difficulty = 1.5f;
+                difficulty = 6;
                 break;
             case "Hardest":
-                difficulty = 1.75f;
+                difficulty = 7;
                 break;
             case "Hardester":
-                difficulty = 2f;
+                difficulty = 8;
                 break;
             case "!?!?":
-                difficulty = 4f;
+                difficulty = 10;
                 break;
         }
     }
@@ -53,36 +52,64 @@ public class EnemySpawner : MonoBehaviour {
         switch(difficultySetting)
         {
             case "Too Easy":
-                difficulty += 0.0001f;
-                break;
-            case "Easy":
-                difficulty += 0.0006f;
-                break;
-            case "Normal":
-                difficulty += 0.0008f;
-                break;
-            case "Hard":
-                difficulty += 0.0009f;
-                break;
-            case "Harder":
                 difficulty += 0.001f;
                 break;
+            case "Easy":
+                difficulty += 0.0014f;
+                break;
+            case "Normal":
+                difficulty += 0.0015f;
+                break;
+            case "Hard":
+                difficulty += 0.0016f;
+                break;
+            case "Harder":
+                difficulty += 0.0017f;
+                break;
             case "Hardest":
-                difficulty += 0.0011f;
+                difficulty += 0.0018f;
                 break;
             case "Hardester":
-                difficulty += 0.0012f;
+                difficulty += 0.0019f;
                 break;
             case "!?!?":
-                difficulty += 0.0015f;
+                difficulty += 0.002f;
                 break;
         }
 
-        if (FindObjectsOfType<EnemyAI>().Length == 0) nextEnemyAt -= 0.9f;
 
-        if(nextEnemyAt <= Time.fixedTime)
+        int enemyCount = FindObjectsOfType<EnemyAI>().Length;
+        if (enemyCount == 0) nextEnemyAt -= 0.9f;
+
+        if(enemyCount < 30 & nextEnemyAt <= Time.fixedTime)
         {
-            int amount = Mathf.Clamp((int)Random.Range(difficulty / 2f, difficulty / 1.5f), 1, 75);    
+
+            int amount = Mathf.Clamp((int)Random.Range(difficulty / 2f, difficulty / 1.5f), 1, 25);
+
+            switch (difficultySetting)
+            {
+                case "Too Easy":
+                    break;
+                case "Easy":
+                    break;
+                case "Normal":
+                    break;
+                case "Hard":
+                    amount = (int)(amount + 1.5f);
+                    break;
+                case "Harder":
+                    amount = (int)(amount + 2f);
+                    break;
+                case "Hardest":
+                    amount = (int)(amount + 2.5f);
+                    break;
+                case "Hardester":
+                    amount = (int)(amount + 3f);
+                    break;
+                case "!?!?":
+                    amount = (int)(amount + 5f);
+                    break;
+            }
 
             for (int i = 0; i < amount; i++)
             {
